@@ -4,3 +4,6 @@ from django.shortcuts import render ,HttpResponse
 def home(request):
     return HttpResponse("hello here maliha ")
     
+
+def contactus(request):
+    return HttpResponse("send your idea")
