@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render , HttpResponse
 
-# Create your views here.
+def maliha_bahar(request):
+    return HttpResponse("this is maliha profile")
+
+
+
+
+
+def codeyade(request):
+    return HttpResponse("this is codeyade profile")
