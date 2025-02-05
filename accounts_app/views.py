@@ -1,7 +1,7 @@
 from django.shortcuts import render , HttpResponse
 
 def maliha_bahar(request):
-    return HttpResponse("this is maliha profile")
+    return HttpResponse("welcome")
 
 
 
