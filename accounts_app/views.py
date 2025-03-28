@@ -8,4 +8,4 @@ def maliha_bahar(request):
 
 
 def codeyade(request):
-    return HttpResponse("this is codeyade profile")
+    return HttpResponse("this is my love profile")
