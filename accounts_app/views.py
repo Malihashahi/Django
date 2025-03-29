@@ -1,7 +1,7 @@
 from django.shortcuts import render , HttpResponse
 
 def maliha_bahar(request):
-    return HttpResponse("welcome")
+    return HttpResponse("work with urls")
 
 
 
