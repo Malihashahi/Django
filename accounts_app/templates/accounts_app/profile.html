@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>django app</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 </head>
 <body>
-  <h1>hello from django tempelate</h1>
-  <h2>I am {{name}}</h2>
+  <div class="text text-center">
+    <h2>The user name : </h2>
+    {{user.username}}
+    <h2>the user lastname</h2>
+     {{user.lastname}}
+  </div>
 </body>
 </html>
