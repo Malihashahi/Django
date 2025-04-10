@@ -6,7 +6,7 @@ urlpatterns = [
   
     path('info', views.info),
     path('profile/<username>',views.profile),
-    
+    path('userslist',views.userlist)
     
     ]
 

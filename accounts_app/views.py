@@ -22,15 +22,18 @@ users = [
      'phone' : '09388883883'
 
 },{ 
-     'username' :'sam',
-     'name' : 'samirbayan',
-     'lastname': 'bayan',
+     'username' :'majidjan',
+     'name' : 'majid',
+     'lastname': 'hamide',
      'phone' : '07990003883'
 
 }
 
 
 ]
+def userlist(request):
+    users_list = users
+    return render(request , 'accounts_app/user_list.html',context={'user_list' : users_list})
 
 def profile(request , username):
     for user in users:
