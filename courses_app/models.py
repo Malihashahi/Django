@@ -7,4 +7,4 @@ class Course(models.Model):
 
 
     def __str__(self):
-        return self.title
+       return f"{self.title} - {self.description[:11]} "
