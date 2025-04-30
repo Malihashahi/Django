@@ -9,11 +9,30 @@
 <body>
   <div class="container">
       <h1>Courses List</h1>
-      {% for course in courses %}
-           <h2>{{ course.title }}</h2>
-           <h2>{{ course.description}}</h2>
-           <hr/>
-      {% endfor %}
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          {% for course in courses %}
+          <tr>
+           <th scope="row">{{forloop.counter}}</th>
+           <td>{{course.title}}</td>
+           <td>{{course.description}}</td>
+          </tr>
+          {% endfor %}
+        
+        </tbody>
+      </table>
+
+   
   </div>
 </body>
 </html>
