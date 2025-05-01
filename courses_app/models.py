@@ -4,6 +4,8 @@ from django.db import models
 class Course(models.Model):
     title = models.CharField(max_length=50)
     description = models.TextField()
+    statution = models.BooleanField(default=True)
+    views = models.IntegerField()
 
 
     def __str__(self):
