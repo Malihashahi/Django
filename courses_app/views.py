@@ -10,4 +10,4 @@ def courses_list(request):
 
 def course_detail(request ,id):
     course = Course.objects.get(id=id)
-    return render(request ,"coursesa_app/course_detail.html" , context={'course':course} )
+    return render(request ,"courses_app/course_detail.html" , context={'course':course} )
