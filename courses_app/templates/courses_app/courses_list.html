@@ -27,7 +27,7 @@
           {% for course in courses %}
           <tr>
            <th scope="row">{{forloop.counter}}</th>
-           <td>{{course.title}}</td>
+           <td><a href="/course/detail/{{course.id}}">{{course.title}}</a></td>
            <td>{{course.description}}</td>
            <td>{{course.statution}}</td>
            <td>{{course.views}}</td>
