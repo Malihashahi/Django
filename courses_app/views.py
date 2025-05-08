@@ -11,5 +11,11 @@ def courses_list(request):
 def course_detail(request ,id):
     course = Course.objects.get(id=id)
     course.views += 1
+    if course.statution == True:
+         course.statution = False
+    else:
+        course.statution = True
+
+
     course.save()
     return render(request ,"courses_app/course_detail.html" , context={'course':course} )
