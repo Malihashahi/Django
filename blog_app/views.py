@@ -6,4 +6,4 @@ def home(request):
     
 
 def contactus(request):
-    return HttpResponse("send your idea for us ")
+    return HttpResponse("send msg ")
