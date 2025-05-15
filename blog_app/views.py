@@ -1,9 +1,11 @@
-from django.shortcuts import render ,HttpResponse
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+
+
 def home(request):
-    return HttpResponse("Blog App ")
-    
+    return render(request, "blog_app/blog.html")
+
+
 
 def contactus(request):
-    return HttpResponse("send msg ")
+    return HttpResponse('Hi This Is Contact us Page')
