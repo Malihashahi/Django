@@ -19,3 +19,10 @@ def course_detail(request ,id):
 
     course.save()
     return render(request ,"courses_app/course_detail.html" , context={'course':course} )
+
+
+
+
+def add_course(request):
+    name = request.Get.get('name')
+    return render(request , 'courses_app/add_course.html')
