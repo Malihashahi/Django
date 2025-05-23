@@ -24,5 +24,7 @@ def course_detail(request ,id):
 
 
 def add_course(request):
-    name = request.Get.get('name')
+    t = request.Get.get('title')
+    d = request.Get.get('description')
+    
     return render(request , 'courses_app/add_course.html')
