@@ -39,12 +39,12 @@
             
            </td>
            <td>
-            {% if course.views >= 10  %}
+            {% if course.views >= 100 %}
             <span class="badge badge-success"> {{ course.views}}</span>
-            {% elif course.views >= 5  %}
+            {% elif course.views >= 25 %}
              <span class="badge badge-warning"> {{ course.views}}</span>
-            {% else course.views >= 2 %}
-              <span class="badge badge-danger"> {{ course.views}}</span>
+            {% else  %}
+                <span class="badge badge-danger"> {{ course.views}}</span>
             {% endif %}
            </td>
            <td>{{course.id}}</td>
