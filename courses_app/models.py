@@ -6,6 +6,7 @@ class Course(models.Model):
     description = models.TextField()
     statution = models.BooleanField(default=True)
     views = models.IntegerField()
+    image = models.ImageField(null=True)
 
 
     def __str__(self):
