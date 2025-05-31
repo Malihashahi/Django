@@ -128,7 +128,7 @@ STATICFILES_DIRS = [
     path.join(BASE_DIR , 'assets')
 ]
 
-
+MEDIA_URL = '/media/'
 MEDIA_ROOT = path.join(BASE_DIR , 'media')
 
 # Default primary key field type

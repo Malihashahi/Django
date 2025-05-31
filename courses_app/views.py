@@ -26,6 +26,7 @@ def course_detail(request ,id):
 def add_course(request):
     t = request.GET.get('title')
     d = request.GET.get('description')
+    
     if t and d:
         Course.objects.create(title=t,description=d, views=0)
         return redirect('/course/list')
