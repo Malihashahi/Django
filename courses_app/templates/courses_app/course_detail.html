@@ -10,9 +10,29 @@
 </head>
 <body>
   <div class="container">
-    {{course.title}}
-    {{course.id}}
-    {{course.description}}
+  
+    
+      <table class="table" style="background-color: rgb(237, 221, 201);">
+        <thead>
+          <tr>
+           
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+             <th scope="col">Image</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+          <tr>
+         
+           <td>{{course.title}}</a></td>
+           <td>{{course.description}}</td>
+           
+            <td><img style="width: 100px; height: 100px;" src="{{ course.image.url }}" alt=""></td>
+          </tr>
+      
+        </tbody>
+      </table>
   </div>
   
 </body>
