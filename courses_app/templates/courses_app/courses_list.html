@@ -51,9 +51,9 @@
            <td>{{course.id}}</td>
             <td>
               {% if not course.image %}
-              <td><img style="width: 40px; height: 40px;" src="{% static 'courses_app/b.jpg' %}" alt=""></td>
+               <td><img style="width: 40px; height: 40px;" src="{% static 'courses_app/img/default.jpg' %}" alt=""></td>
               {% else %}
-              <td> <img style="width: 40px; height: 40px;" src="{{ course.image.url }}" alt=""></td>
+               <td> <img style="width: 40px; height: 40px;" src="{{ course.image.url }}" alt=""></td>
               {% endif %}
 
             </td>
